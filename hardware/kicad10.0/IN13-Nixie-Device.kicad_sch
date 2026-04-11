@@ -1105,7 +1105,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1864,6 +1864,39 @@
 				)
 			)
 			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" "POT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=r0 2=wiper 3=r1"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6526,7 +6559,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 34.29) (xy 176.53 34.29)
+			(xy 173.99 34.29) (xy 175.26 34.29)
 		)
 		(stroke
 			(width 0)
@@ -6573,6 +6606,16 @@
 			(type default)
 		)
 		(uuid "4a76db3e-2d10-470c-bd53-ab29872c71c5")
+	)
+	(wire
+		(pts
+			(xy 161.29 34.29) (xy 160.02 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d174a2f-ae22-43a8-8267-7a2ab39d07f5")
 	)
 	(wire
 		(pts
@@ -6716,6 +6759,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 34.29) (xy 160.02 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c0c5259-4f20-439d-855e-13719b0c6169")
+	)
+	(wire
+		(pts
 			(xy 177.8 163.83) (xy 177.8 166.37)
 		)
 		(stroke
@@ -6753,16 +6806,6 @@
 			(type default)
 		)
 		(uuid "6f23b5fc-3919-481d-8130-150ed2a52409")
-	)
-	(wire
-		(pts
-			(xy 186.69 34.29) (xy 186.69 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7046eadc-fa75-473a-bf34-35f89fda517b")
 	)
 	(wire
 		(pts
@@ -6843,16 +6886,6 @@
 			(type default)
 		)
 		(uuid "8113d3a2-c5c1-4f26-82ab-7a28580e0654")
-	)
-	(wire
-		(pts
-			(xy 184.15 34.29) (xy 186.69 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "811ab546-3db3-4ad5-9922-6164d2ade928")
 	)
 	(wire
 		(pts
@@ -7413,16 +7446,6 @@
 			(type default)
 		)
 		(uuid "e9e888a2-a1b0-40c9-88a1-ab54bdb33456")
-	)
-	(wire
-		(pts
-			(xy 167.64 34.29) (xy 168.91 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea0e32aa-0ccb-4ca0-9ccc-31dfe2a8ff2f")
 	)
 	(wire
 		(pts
@@ -8078,6 +8101,30 @@
 			)
 		)
 	)
+	(global_label "HV"
+		(shape input)
+		(at 175.26 34.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "adcfee43-37b2-4a1b-a13a-fef0d42f43aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.6643 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "D+"
 		(shape input)
 		(at 95.25 154.94 0)
@@ -8099,30 +8146,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "HV"
-		(shape input)
-		(at 167.64 34.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bd29da32-2788-4854-9126-39a04b7e30e3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.2357 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -12849,6 +12872,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 160.02 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8450cc54-d38d-49f3-83b7-5d276848daf4")
+		(property "Reference" "#PWR05"
+			(at 160.02 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f51cb41f-4c47-4f29-93ac-93b9f2b91fe6")
+		)
+		(instances
+			(project "IN13-Nixie-Device"
+				(path "/36cde5b7-6663-4cfe-a0a3-3f17918aab11"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 48.26 140.97 0)
 		(unit 1)
@@ -13122,7 +13222,7 @@
 		(pin "B9"
 			(uuid "0aa722e8-1982-4b4e-b24d-66e84472a607")
 		)
-		(pin "S1"
+		(pin "SH"
 			(uuid "3a0a6115-8086-4a9a-a073-64e0422e1a93")
 		)
 		(instances
@@ -13794,83 +13894,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 186.69 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "aa1c4c97-f05f-42af-a546-d0f6c82bacef")
-		(property "Reference" "#PWR05"
-			(at 186.69 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 186.69 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "483a3628-76dd-4bf7-9856-bb42f7909546")
-		)
-		(instances
-			(project "IN13-Nixie-Device"
-				(path "/36cde5b7-6663-4cfe-a0a3-3f17918aab11"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 110.49 147.32 0)
 		(unit 1)
 		(body_style 1)
@@ -14371,7 +14394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Nixie:AliExpress_HV_Module"
+		(property "Footprint" "IN13-Nixie-Device:AliExpress_HV_Module"
 			(at 156.464 119.634 0)
 			(hide yes)
 			(show_name no)
@@ -15139,87 +15162,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 180.34 34.29 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c9d6485e-5fd5-4570-9910-a8df0dd53d05")
-		(property "Reference" "R1"
-			(at 181.61 32.004 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220k"
-			(at 182.626 34.29 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 180.34 36.068 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 180.34 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f87d16b4-950e-4296-a01c-6d928e1dc4b4")
-		)
-		(pin "1"
-			(uuid "e4b968ad-4269-438f-92d2-1cea3444aab7")
-		)
-		(instances
-			(project "IN13-Nixie-Device"
-				(path "/36cde5b7-6663-4cfe-a0a3-3f17918aab11"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 280.67 182.88 0)
 		(unit 1)
@@ -15846,6 +15788,87 @@
 			(project "IN13-Nixie-Device"
 				(path "/36cde5b7-6663-4cfe-a0a3-3f17918aab11"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 165.1 34.29 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e879c3a9-d593-41dd-9e47-6fccc55cc0df")
+		(property "Reference" "R1"
+			(at 166.37 32.004 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220k"
+			(at 167.386 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 165.1 36.068 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 165.1 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c99fa31c-39a4-4c51-9a39-40cc8feee601")
+		)
+		(pin "1"
+			(uuid "16890f33-a3cd-414c-a839-a115e18034a6")
+		)
+		(instances
+			(project "IN13-Nixie-Device"
+				(path "/36cde5b7-6663-4cfe-a0a3-3f17918aab11"
+					(reference "R1")
 					(unit 1)
 				)
 			)
