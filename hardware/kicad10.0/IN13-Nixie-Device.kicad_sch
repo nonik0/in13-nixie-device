@@ -6064,10 +6064,6 @@
 		(uuid "735995fd-7027-4119-baab-beada473bf5c")
 	)
 	(no_connect
-		(at 100.33 87.63)
-		(uuid "7dc5bccf-6ccb-47c1-9ac1-04e930d65f1a")
-	)
-	(no_connect
 		(at 91.44 90.17)
 		(uuid "94d17b1f-7cd1-4469-b495-5c17eb709f72")
 	)
@@ -8395,7 +8391,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Espressif:ESP32-C6-MINI-1"
+		(property "Footprint" "PCM_Espressif:ESP32-C6-MINI-1U"
 			(at 63.5 120.015 0)
 			(hide yes)
 			(show_name no)
@@ -10451,6 +10447,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 100.33 87.63 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "439d56af-02fd-451c-a875-405251e0f6c8")
+		(property "Reference" "TP5"
+			(at 105.156 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 109.982 86.868 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 100.33 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 100.33 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ca6e2a2-9db4-4b09-92b4-777b7b3f6d79")
+		)
+		(instances
+			(project "IN13-Nixie-Device"
+				(path "/36cde5b7-6663-4cfe-a0a3-3f17918aab11"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 76.2 30.48 0)
 		(unit 1)
@@ -11744,7 +11819,7 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "731f3562-9fd8-4f13-a480-ba7e91e5d745")
@@ -12710,7 +12785,7 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93db8092-1992-4888-b43b-381965211c68")
